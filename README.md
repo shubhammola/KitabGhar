@@ -19,9 +19,9 @@ Kitab Ghar is an **imaginary online bookstore** concept that provides a rich and
 
 ## Technologies Used 🛠️
 ```
-•	HTML – Structure
-•	CSS & Bootstrap – Styling & responsiveness
-•	JavaScript – Interactive elements
+- HTML – Structure
+- CSS & Bootstrap – Styling & responsiveness
+- JavaScript – Interactive elements
 ```
 
 ## [Live Demo](https://kitabokaghar.netlify.app)
