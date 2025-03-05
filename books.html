@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/e3bb8bcf2d.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+XjB12uAe1tVHF2I8G6TI7GgSTXQ6U6" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-0sFmec+TmJMWf8T6T9Y6XkU6ZngdSx8QHx+TEfBxCwJzPK0M4q3NbiY/9+MkZ0n1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+XjB12uAe1tVHF2I8G6TI7GgSTXQ6U6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e3bb8bcf2d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Kitab!</title>
+    <style>
+        .special-icon {
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+        }
+
+        .special-icon:hover {
+            transform: translateZ(20px) rotateX(15deg) rotateY(15deg);
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes rotate-in {
+            0% {
+                transform: rotateX(90deg) rotateY(90deg) rotateZ(90deg);
+            }
+
+            100% {
+                transform: rotateX(0) rotateY(0) rotateZ(0);
+            }
+        }
+        .special-icon {
+            background: linear-gradient(45deg, #ff527b, #e84a7f);
+            -webkit-background-clip: text; /* Add -webkit- prefix */
+            background-clip: text;
+            -webkit-text-fill-color: transparent; /* Add -webkit- prefix */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+        }
+        .active1{
+          position: relative;
+          padding: 90px 90px;
+        }
+        .fa{
+          text-align: center;
+          font-size: 100px;
+          position: relative;
+          padding: 10px;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-light" style="background-color:  #ffd9e5;">
+    <a class="navbar-brand" href="#">
+      <i class="fa fa-book-open-reader special-icon" style="text-align: center; font-size: 70px;"></i>
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="home.html" style="color: black;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="books.html" style="color: black;">Books</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutus.html" style="color: black;">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactus.html" style="color: black;">Contact Us</a>
+            </li>
+        </ul>
+        <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input class="search-input" type="text" placeholder="Search...">
+        </div>
+    </div>
+</nav>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+      <div class="container">
+        <h1 class="bookhead">Our Staff best picker and new arrivals are always updated on this page every Monday.</h1>
+        <h3 class="bookhead1">Please make sure to stay updated...who know your fav may soon be out of stock!!</h3>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!--Fiction Books-->
+    <div id="bookCarousel1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#bookCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#bookCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#bookCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#bookCarousel1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="active1">
+                <div class="container mt-5">
+                  <div class="row">
+                  <div class="col-sm-12 bg-secondary p-5">
+                    <h1 style="text-align:center;"><mark>Fiction Books!</mark></h1>
+                  </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+          <div class="carousel-item">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-sm-4">
+                    <div class="card c1">
+                      <i class="fa fa-book-bookmark" style="color:rgb(238, 87, 87)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">The Great Gatsby</h5>
+                        <p class="card-text">by F. Scott Fitzgerald</p>
+                        <a href="https://en.wikipedia.org/wiki/The_Great_Gatsby" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c1">
+                      <i class="fa fa-book-bookmark" style="color:rgb(238, 87, 87)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">To Kill a Mockingbird</h5>
+                        <p class="card-text">by Harper Lee</p>
+                        <a href="https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c1">
+                      <i class="fa fa-book-bookmark" style="color:rgb(238, 87, 87)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Summer</h5>
+                        <p class="card-text">by Ali Smith</p>
+                        <a href="https://www.theguardian.com/books/2021/aug/13/elif-shafak-on-summer-in-istanbul" class="btn btn-primary">Preview</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          
+          <div class="carousel-item">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-sm-4">
+                    <div class="card c1">
+                      <i class="fa fa-book-bookmark" style="color:rgb(168, 87, 238)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Kafka on the Shore</h5>
+                        <p class="card-text">by Haruki Murakami</p>
+                        <a href="https://en.wikipedia.org/wiki/Kafka_on_the_Shore" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c1">
+                      <i class="fa fa-book-bookmark" style="color:rgb(168, 87, 238)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">After Dark</h5>
+                        <p class="card-text">by Haruki Murakami</p>
+                        <a href="https://en.wikipedia.org/wiki/After_Dark_(novel)" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c1">
+                      <i class="fa fa-book-bookmark" style="color:rgb(168, 87, 238)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Pride and Prejudice</h5>
+                        <p class="card-text">by Jane Austen</p>
+                        <a href="https://en.wikipedia.org/wiki/Pride_and_Prejudice" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+          <div class="carousel-item">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-sm-4">
+                    <div class="card c1">
+                      <i class="fa fa-book-bookmark" style="color:rgb(87, 170, 238)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">The Hobbit</h5>
+                        <p class="card-text">by J.R.R. Tolkien</p>
+                        <a href="https://en.wikipedia.org/wiki/The_Hobbit" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c1">
+                      <i class="fa fa-book-bookmark" style="color:rgb(87, 170, 238)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">1984</h5>
+                        <p class="card-text">by George Orwell</p>
+                        <a href="https://en.wikipedia.org/wiki/Nineteen_Eighty-Four" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c1">
+                      <i class="fa fa-book-bookmark" style="color:rgb(87, 170, 238)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Honour</h5>
+                        <p class="card-text">by Elif Shafak</p>
+                        <a href="https://www.penguin.co.uk/books/183457/honour-by-shafak-elif/9780241989241" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+    <!--Non Fiction Books-->
+    <div id="bookCarousel2" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#bookCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#bookCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#bookCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#bookCarousel2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="active1">
+                <div class="container mt-5">
+                  <div class="row">
+                  <div class="col-sm-12 bg-secondary p-5">
+                    <h1 style="text-align:center;"><mark>Non Fiction Books!</mark></h1>
+                  </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+          <div class="carousel-item">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-sm-4">
+                    <div class="card c2">
+                      <i class="fa fa-book" style="color:rgb(2, 89, 160)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Sapiens</h5>
+                        <p class="card-text">by Yuval Noah Harari</p>
+                        <a href="https://www.ynharari.com/book/sapiens-2/" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c2">
+                      <i class="fa fa-book" style="color:rgb(2, 89, 160)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Unbroken</h5>
+                        <p class="card-text">by Laura Hillenbrand</p>
+                        <a href="https://en.wikipedia.org/wiki/Unbroken_(book)" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c2">
+                      <i class="fa fa-book" style="color:rgb(2, 89, 160)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Blink</h5>
+                        <p class="card-text">by Malcolm Gladwell</p>
+                        <a href="https://en.wikipedia.org/wiki/Blink:_The_Power_of_Thinking_Without_Thinking" class="btn btn-primary">Preview</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          
+          <div class="carousel-item">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-sm-4">
+                    <div class="card c2">
+                      <i class="fa fa-book" style="color:rgb(2, 160, 10)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Outliers</h5>
+                        <p class="card-text">by Malcolm Gladwell</p>
+                        <a href="https://en.wikipedia.org/wiki/Outliers_(book)" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c2">
+                      <i class="fa fa-book" style="color:rgb(2, 160, 10)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Grit</h5>
+                        <p class="card-text">by Angela Duckworth</p>
+                        <a href="https://angeladuckworth.com/grit-book/" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c2">
+                      <i class="fa fa-book" style="color:rgb(2, 160, 10)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Quiet</h5>
+                        <p class="card-text">by Susan Cain</p>
+                        <a href="https://susancain.net/book/quiet/" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+          <div class="carousel-item">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-sm-4">
+                    <div class="card c2">
+                      <i class="fa fa-book" style="color:rgb(160, 2, 94)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Atomic Habits</h5>
+                        <p class="card-text">by James Clear</p>
+                        <a href="https://jamesclear.com/atomic-habits" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c2">
+                      <i class="fa fa-book" style="color:rgb(160, 2, 94)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Bad Blood</h5>
+                        <p class="card-text">by George Orwell</p>
+                       <a href="https://en.wikipedia.org/wiki/Bad_Blood:_Secrets_and_Lies_in_a_Silicon_Valley_Startup" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c2">
+                      <i class="fa fa-book" style="color:rgb(160, 2, 94)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Homo Deus</h5>
+                        <p class="card-text">by Yuval Noah Harari</p>
+                        <a href="https://www.ynharari.com/book/homo-deus/" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!--Children Books-->
+    <div id="bookCarousel3" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#bookCarousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#bookCarousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#bookCarousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#bookCarousel3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="active1">
+                <div class="container mt-5">
+                  <div class="row">
+                  <div class="col-sm-12 bg-secondary p-5">
+                    <h1 style="text-align:center;"><mark>Children Books!</mark></h1>
+                  </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+          <div class="carousel-item">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-sm-4">
+                    <div class="card c3">
+                      <i class="fa fa-book-open" style="color:rgb(2, 160, 115)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Matilda</h5>
+                        <p class="card-text">by Roald Dahl</p>
+                        <a href="https://en.wikipedia.org/wiki/Matilda_(novel)" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c3">
+                      <i class="fa fa-book-open" style="color:rgb(2, 160, 115)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Wonder</h5>
+                        <p class="card-text">by R.J. Palacio</p>
+                        <a href="https://en.wikipedia.org/wiki/Wonder_(Palacio_novel)" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c3">
+                      <i class="fa fa-book-open" style="color:rgb(2, 160, 115)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Charlotte's Web</h5>
+                        <p class="card-text">by E.B. White</p>
+                        <a href="https://en.wikipedia.org/wiki/Charlotte%27s_Web#:~:text=The%20novel%20tells%20the%20story,farmer%20to%20let%20him%20live." class="btn btn-primary">Preview</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          
+          <div class="carousel-item">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-sm-4">
+                    <div class="card c3">
+                      <i class="fa fa-book-open" style="color:rgb(160, 107, 2)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Holes</h5>
+                        <p class="card-text">by Louis Sachar</p>
+                        <a href="https://en.wikipedia.org/wiki/Holes_(novel)" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c3">
+                      <i class="fa fa-book-open" style="color:rgb(160, 107, 2)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">The Giver</h5>
+                        <p class="card-text">by  Lois Lowry</p>
+                        <a href="https://en.wikipedia.org/wiki/The_Giver" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c3">
+                      <i class="fa fa-book-open" style="color:rgb(160, 107, 2)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Hatchet</h5>
+                        <p class="card-text">by Gary Paulsen</p>
+                       <a href="https://en.wikipedia.org/wiki/Hatchet_(novel)" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+          <div class="carousel-item">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-sm-4">
+                    <div class="card c3">
+                      <i class="fa fa-book-open" style="color:aliceblue"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Winnie-the-Pooh</h5>
+                        <p class="card-text">by A.A. Milne</p>
+                        <a href="https://en.wikipedia.org/wiki/Winnie-the-Pooh_(book)" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c3">
+                      <i class="fa fa-book-open" style="color:aliceblue"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Pippi Longstocking</h5>
+                        <p class="card-text">by Astrid Lindgren</p>
+                        <a href="https://en.wikipedia.org/wiki/Pippi_Longstocking" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c3">
+                      <i class="fa fa-book-open" style="color:aliceblue"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Tuck Everlasting</h5>
+                        <p class="card-text">by  Natalie Babbitt</p>
+                        <a href="https://en.wikipedia.org/wiki/Tuck_Everlasting" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel3" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel3" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+     <!--Biographies-->
+     <div id="bookCarousel4" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#bookCarousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#bookCarousel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#bookCarousel4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#bookCarousel4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="active1">
+                <div class="container mt-5">
+                  <div class="row">
+                  <div class="col-sm-12 bg-secondary p-5">
+                    <h1 style="text-align:center;"><mark>Biographies!</mark></h1>
+                  </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+          <div class="carousel-item">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-sm-4">
+                    <div class="card c4">
+                      <i class="fa fa-book-journal-whills" style="color:rgb(81, 167, 242)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Becoming</h5>
+                        <p class="card-text">by Michelle Obama</p>
+                        <a href="https://en.wikipedia.org/wiki/Becoming_(book)" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c4">
+                      <i class="fa fa-book-journal-whills" style="color:rgb(81, 167, 242)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Steve Jobs</h5>
+                        <p class="card-text">by Walter Isaacson</p>
+                        <a href="https://en.wikipedia.org/wiki/Steve_Jobs_(book)" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c4">
+                      <i class="fa fa-book-journal-whills" style="color:rgb(81, 167, 242)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Unbroken</h5>
+                        <p class="card-text">by Laura Hillenbrand</p>
+                        <a href="https://en.wikipedia.org/wiki/Unbroken_(book)" class="btn btn-primary">Preview</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          
+          <div class="carousel-item">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-sm-4">
+                    <div class="card c4">
+                      <i class="fa fa-book-journal-whills" style="color:rgb(129, 175, 3)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Leonardo da Vinci</h5>
+                        <p class="card-text">by Walter Isaacson</p>
+                        <a href="https://www.nytimes.com/2017/11/01/books/review-leonardo-da-vinci-biography-walter-isaacson.html" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c4">
+                      <i class="fa fa-book-journal-whills" style="color:rgb(129, 175, 3)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Into Thin Air</h5>
+                        <p class="card-text">by Jon Krakauer</p>
+                        <a href="https://en.wikipedia.org/wiki/Into_Thin_Air" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c4">
+                      <i class="fa fa-book-journal-whills" style="color:rgb(129, 175, 3)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Benjamin Franklin</h5>
+                        <p class="card-text">by Walter Isaacson</p>
+                        <a href="https://en.wikipedia.org/wiki/Benjamin_Franklin:_An_American_Life" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+          <div class="carousel-item">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-sm-4">
+                    <div class="card c4">
+                      <i class="fa fa-book-journal-whills" style="color:rgb(214, 122, 3)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Einstein</h5>
+                        <p class="card-text">by Walter Isaacson</p>
+                        <a href="https://en.wikipedia.org/wiki/Einstein:_His_Life_and_Universe" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c4">
+                      <i class="fa fa-book-journal-whills" style="color:rgb(214, 122, 3)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Born a Crime</h5>
+                        <p class="card-text">by Trevor Noah</p>
+                        <a href="https://en.wikipedia.org/wiki/Born_a_Crime" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card c4">
+                      <i class="fa fa-book-journal-whills" style="color:rgb(214, 122, 3)"></i>
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Team of Rivals</h5>
+                        <p class="card-text">by Doris Kearns Goodwin</p>
+                        <a href="https://en.wikipedia.org/wiki/Team_of_Rivals" class="btn btn-primary">Preview</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel4" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel4" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; Kitab Ghar. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                        <li class="list-inline-item"><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
