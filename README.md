@@ -18,8 +18,10 @@ Kitab Ghar is an **imaginary online bookstore** concept that provides a rich and
 4. Alternative: Open Manually in a Browser → Locate the `home.html` file in your project folder → Right-click on it and choose `Open With` → `Google Chrome (or any browser)`
 
 ## Technologies Used 🛠️
+```
 •	HTML – Structure
 •	CSS & Bootstrap – Styling & responsiveness
 •	JavaScript – Interactive elements
+```
 
 ## [Live Demo](https://kitabokaghar.netlify.app)
