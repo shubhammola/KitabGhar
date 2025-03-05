@@ -17,6 +17,10 @@ Kitab Ghar is an **imaginary online bookstore** concept that provides a rich and
 3. Open `home.html` file on VS Code then Right-click on `home.html` and select `Open with Live Server`
 4. Alternative: Open Manually in a Browser → Locate the `home.html` file in your project folder → Right-click on it and choose `Open With` → `Google Chrome (or any browser)`
 
+**Note:**
+1. Please add/insert Google Map API link in `about.html` in `line 16`
+2. Also please add your own images since we can observe image src in `about.html`.
+
 ## Technologies Used 🛠️
 ```
 - HTML – Structure
